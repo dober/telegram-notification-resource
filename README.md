@@ -1,4 +1,7 @@
 # telegram-notification-resource
+
+[![build status](https://ci.inet.club/api/v1/teams/main/pipelines/telegram-notification-resource/jobs/build-n-publish/badge)](https://ci.inet.club/teams/main/pipelines/telegram-notification-resource)
+
 Resource for Concourse CI to send messages to Telegram. You can pass your message from tasks with text file, or send a static message. 
 
 ![Telegram Botfather](https://core.telegram.org/file/811140763/1/PihKNbjT8UE/03b57814e13713da37)
@@ -33,7 +36,7 @@ resource_types:
 - name: telegram-notification
   type: docker-image
   source:
-    repository: w32blaster/concourse-telegram-notifier
+    repository: ghcr.io/dober/telegram-notification-resource:latest
     tag: latest
 
 # declare resource
